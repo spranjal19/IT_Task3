@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Exercise-11</title>
+    <style>
+        body {
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            padding: 4px;
+            width: 200px;
+        }
+        input[type="button"] {
+            padding: 4px 8px;
+            margin: 5px;
+        }
+        #Result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h3>Add Items in Array</h3>
+<input type="text" id="text1">
+<input type="button" value="Add" onclick="addItem();">
+<input type="button" value="Display" onclick="display();">
+<div id="Result"></div>
+<script>
+    var array = [];
+    var x = 0;
+    function addItem() {
+        var value = document.getElementById("text1").value;
+        if (value === "") {
+            alert("Please enter a value");
+            return;
+        }
+        array[x] = value;
+        alert("Element: " + array[x] + " Added at index " + x);
+        x++;
+        document.getElementById("text1").value = "";
+    }
+    function display() {
+        var e = "<hr/>";
+        for (var y = 0; y < array.length; y++) {
+            e += "Element " + y + " = " + array[y] + "<br/>";
+        }
+        document.getElementById("Result").innerHTML = e;
+    }
+</script>
+</body>
+</html>

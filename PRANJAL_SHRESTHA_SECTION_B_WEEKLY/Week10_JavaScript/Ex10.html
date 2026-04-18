@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Exercise-10</title>
+    <style>
+        body {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h2>Area of Rectangle</h2>
+<script>
+    function calculateArea(length, breadth) {
+        return length * breadth;
+    }
+    let length = parseFloat(prompt("Enter length:"));
+    let breadth = parseFloat(prompt("Enter breadth:"));
+    let area = calculateArea(length, breadth);
+    document.write("Length: " + length + "<br>");
+    document.write("Breadth: " + breadth + "<br>");
+    document.write("Area of Rectangle: " + area);
+</script>
+</body>
+</html>
