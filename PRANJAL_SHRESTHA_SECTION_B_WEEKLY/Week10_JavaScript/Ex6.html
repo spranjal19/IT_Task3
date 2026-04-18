@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Ex-6</title>
+</head>
+<body>
+    <h3>Multiplication Table of 5</h3>
+    <div id="table" class="table"></div>
+    <script>
+        let output = "";
+        for (let i = 1; i <= 10; i++) {
+            output += `<div style="text-align: left; margin: 5px 0;">5 * ${i} = ${5 * i}</div>`;
+        }
+        document.getElementById('table').innerHTML = output;
+    </script>
+</body>
+</html>

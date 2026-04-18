@@ -1,0 +1,94 @@
+.main {
+    border: 1px solid black;
+    padding: 10px;
+    height: 295px; 
+    width: 531px;
+    position: relative;
+    background-color: rgb(240, 237, 237);
+}
+
+
+div.blue {
+    border: 1px solid;
+    padding: 30px;
+    width: 150px;
+    height: 210px;
+    background-color: rgb(180, 224, 235);
+    position: absolute; 
+    left: 5px;
+    top: 40px;
+}
+
+.c1 {
+    border: 1px solid;
+    padding: 10px;
+    height: 10px;
+    width: 190px;
+    color: #330000;
+    background-color: rgb(240, 237, 237);
+    position: absolute; 
+    left: 5px;
+    top: 5px;
+    text-align: center;
+}
+
+div.yellow {
+    border: 1px solid;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    background-color: yellow;
+    position: absolute; 
+    left: 220px;
+    top: 40px;
+    text-align: center;
+}
+
+.c2 {
+    border: 1px solid;
+    padding: 10px;
+    height: 10px;
+    width: 140px;
+    color: #330000;
+    background-color: rgb(240, 237, 237);
+    position: absolute; 
+    left: 220px;
+    top: 5px;
+    text-align: center;
+}
+
+div.red {
+    border: 1px solid;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    background-color: red;
+    position: absolute; 
+    left: 385px;
+    top: 40px;
+    text-align: center;
+}
+
+.c3 {
+    border: 1px solid;
+    padding: 10px;
+    height: 10px;
+    width: 140px;
+    color: #330000;
+    background-color: rgb(240, 237, 237);
+    position: absolute; 
+    left: 385px;
+    top: 5px;
+    text-align: center;
+}
+
+div.green {
+    border: 1px solid;
+    padding: 15px;
+    width: 295px;
+    height: 184px;
+    background-color: green;
+    position: absolute; 
+    left: 220px;
+    top: 95px;
+}

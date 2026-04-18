@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Test</title>
+</head>
+<body>
+    <center>
+    <div style="border: 1px solid #000; width: 480px; padding: 16px; font-family: serif; margin: 0 auto;">
+        <h3 style="margin-top: 0; border-bottom: 1px solid #ccc; padding-bottom: 6px;">HTML Form Test</h3>
+    
+        <form action="#" method="post">
+        <table cellpadding="8" cellspacing="0" style="margin: 0 auto;">
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" name="name" style="width: 160px;"></td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><input type="text" id="address" name="address" style="width: 160px;"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="text" id="email" name="email" style="width: 160px;"></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                <input type="radio" name="gender" value="male"> Male &nbsp;
+                <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                <input type="checkbox" name="hobbies" value="sports"> Sports &nbsp;
+                <input type="checkbox" name="hobbies" value="movies"> Movies &nbsp;
+                <input type="checkbox" name="hobbies" value="travelling"> Travelling
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                <select id="country" name="country" style="width: 165px;">
+                <option value="nepal"    selected>Nepal</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td valign="top"><label for="message">Message</label></td>
+                <td><textarea id="message" name="message" rows="7" cols="35"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                <input type="submit" value="Submit">
+                &nbsp;
+                <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</center>
+</body>
+</html>
+

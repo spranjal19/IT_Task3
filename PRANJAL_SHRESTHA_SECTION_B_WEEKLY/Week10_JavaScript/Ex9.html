@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Exercise-9</title>
+    <style>
+        body {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h2>Sum and Product of Numbers</h2>
+<script>
+    let n = parseInt(prompt("How many numbers do you want to enter?"));
+    let numbers = [];
+    let sum = 0;
+    let product = 1;
+    for (let i = 0; i < n; i++) {
+        let num = parseFloat(prompt("Enter " + (i + 1) + " number:"));
+        numbers.push(num);
+        sum += num;
+        product *= num;
+    }
+    document.write("Numbers: " + numbers + "<br>");
+    document.write("Sum: " + sum + "<br>");
+    document.write("Product: " + product);
+</script>
+</body>
+</html>

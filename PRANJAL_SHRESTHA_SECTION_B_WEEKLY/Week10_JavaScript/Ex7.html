@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Ex-7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: white;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #8b4fa3;
+        }
+        th {
+            background-color: rgb(229, 217, 252);
+            color: rgb(253, 249, 254);
+        }
+        tr:nth-child(even) {
+            background-color: rgb(229, 217, 252); 
+        }
+        tr:nth-child(odd) {
+            background-color: rgb(253, 249, 254); 
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table id="data">
+            <thead>
+                <tr>
+                    <th>S.N.</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const info = [
+            { sn: 1, name: 'Lavenders', image: '1.png' },
+            { sn: 2, name: 'Stuffed Toy', image: '2.png' },
+            { sn: 3, name: 'Bouquet', image: '3.png' },
+            { sn: 4, name: 'Bedroom', image: '4.png' }
+        ];
+        function populateTable() {
+            const table = document.getElementById('table');
+            info.forEach(item => {
+                const row = table.insertRow();
+                row.innerHTML =
+                    `<td>${item.sn}</td>
+                    <td>${item.name}</td>
+                    <td><img src="${item.image}" alt="${item.name} image" onerror="this.src='https://via.placeholder.com/50?text=${item.sn}'"></td>`;
+            });
+        }
+        window.onload = populateTable;
+    </script>
+</body>
+</html>
